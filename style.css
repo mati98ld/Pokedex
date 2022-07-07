@@ -5,7 +5,7 @@
 }
 
 #lista {
-    max-height: 700px;
+    max-height: 600px;
     font-size: 1.5em;
     overflow-y: scroll;
 }
@@ -38,7 +38,7 @@
 
 }
 
-.maestro,
+.maestro #lista,
 .detalle {
     border: solid 2px rgb(0, 0, 0);
     background-color: beige;
@@ -124,4 +124,52 @@ ul li {
 .detailHeader {
     align-self: flex-end;
     margin-right: 12px;
+}
+
+.flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.spacearound{
+    justify-content: space-around;
+}
+
+.aligncenter{
+    align-items: center;
+}
+
+.circulito, .circulo{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.circulo{
+    width: 70px;
+    height: 70px;
+}
+
+.circulito{
+    width: 30px;
+    height: 30px;
+}
+
+.rojo{
+    background-color: #d72525;
+}
+
+.verde{
+    background-color: green;
+}
+
+.amarillo{
+    background-color: yellow;
 }
