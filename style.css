@@ -2,17 +2,15 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
     margin: 0;
-    text-transform: capitalize;
 }
 
 #lista {
     max-height: 700px;
     font-size: 1.5em;
-    list-style: none;
     overflow-y: scroll;
 }
 
-#lista li{
+#lista li {
     cursor: pointer;
     padding: 12px;
 }
@@ -30,30 +28,38 @@
 
 .container {
     display: flex;
-    background-color: 	#FF0000;
+    background-color: #FF0000;
     margin: 12px;
     padding: 12px;
     justify-content: space-around;
     border: solid;
     border-radius: 15px;
     border-color: black;
-    
+
 }
 
-.maestro, .detalle {
-    border: solid 2px rgb(0,0,0);
+.maestro,
+.detalle {
+    border: solid 2px rgb(0, 0, 0);
     background-color: beige;
     margin: 12px;
     border-radius: 15px;
 }
 
-.detalle {
+.detail {
+    display: flex;
     flex-grow: 3;
     flex-basis: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.detalle {
     padding: 30px;
     display: flex;
-    flex-direction: column; 
-    align-items: center;   
+    flex-direction: column;
+    align-items: center;
     height: min-content;
 }
 
@@ -64,6 +70,7 @@
 
 ul li {
     margin: 12px;
+    list-style: none;
 }
 
 #imagen {
@@ -73,4 +80,48 @@ ul li {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.tipos-container {
+    margin: 0%;
+}
+
+#tipos {
+    display: flex;
+    justify-content: center;
+}
+
+.tipo {
+    font-weight: bold;
+    background-color: gray;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.fire {
+    background-color: #FF0000;
+    color: #ffffff;
+}
+
+.grass {
+    background-color: green;
+}
+
+.flying {
+    background-color: rgb(59, 184, 206);
+}
+
+.water {
+    background-color: rgb(4, 0, 255);
+    color: #ffffff;
+}
+
+.poison {
+    background-color: violet;
+}
+
+.detailHeader {
+    align-self: flex-end;
+    margin-right: 12px;
 }

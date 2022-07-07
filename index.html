@@ -16,17 +16,24 @@
     <div class="container">
         <div class="maestro">
             <ul id="lista"></ul>
+            <button id="showMoreBtn">Cargar más</button>
         </div>
-        <div class="detalle">
-            <h1 id="nombre">Nombre del pokémon</h1>
-            <div id="imagen"></div>
-            <ul>
-                <li>Altura: <span id="altura"></span></li>
-                <li>Peso: <span id="peso"></span></li>
-                <li>Tipos:
-                    <ul id="tipos"></ul>
-                </li>
-            </ul>
+        <div class="detail">
+            <div class="detailHeader">
+                <input type="search" name="buscador" id="searchPokemonInput">
+                <button id="searchPokemonBtn">Buscar</button>
+            </div>
+            <div class="detalle">
+                <h1 id="nombre">Nombre del pokémon</h1>
+                <div id="imagen"></div>
+                <ul>
+                    <li>Altura: <span id="altura"></span></li>
+                    <li>Peso: <span id="peso"></span></li>
+                    <li class="tipos-container">
+                        <ul id="tipos"></ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
