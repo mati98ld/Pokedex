@@ -71,6 +71,11 @@
 ul li {
     margin: 12px;
     list-style: none;
+    text-transform: capitalize;
+}
+
+#nombre {
+    text-transform: capitalize;
 }
 
 #imagen {
@@ -172,4 +177,36 @@ ul li {
 
 .amarillo{
     background-color: yellow;
+}
+
+.container {
+    display: none;
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    background-color: #ffcc01;
+    border: 6px solid #346bbc;
+    width: 600px;
+    height: 400px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.loginContainer {
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+#user,
+#password,
+#BtnLogin {
+    width: 500px;
+    height: 70px;
 }

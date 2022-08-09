@@ -1,5 +1,35 @@
 let pokemonNames = document.querySelector("#lista")
 
+let formulario = document.querySelector("#formulario")
+
+const user = {
+    usuario: document.querySelector("#user").value,
+    contraseña: document.querySelector("#password").value
+};
+
+const options = {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(user),
+};
+
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+    fetch('https://jsonplaceholder.typicode.com/posts', options)
+        .then(response => response.json())
+        .then(function (response) {
+            if (response.code == 200) {
+                document.querySelector(".container").style = "display:flex"
+                document.querySelector("#loginContainer").style = "display:none";
+            } else {
+                alert("No tenes acceso")
+            }
+        });
+});
+
+
 function showDetailPokemon(urlDetalle, nombrePokemon) {
     fetch(urlDetalle)
         .then(response => response.json())
